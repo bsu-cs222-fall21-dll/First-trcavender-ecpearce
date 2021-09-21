@@ -5,6 +5,8 @@ import java.net.URLConnection;
 public class WikipediaConnect {
 
     public URLConnection openConnection(){
+        //https://en.wikipedia.org/wiki/Special:ApiSandbox
+        // use sandbox to find recent updates?
 
 
     }
