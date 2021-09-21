@@ -11,10 +11,8 @@ public class WikipediaConnect {
 
     }
 
-    public String getWikiPage(String n){
-        String input = n;
-        //String n is the user input
-        static String encode(input, "www.wikipedia.com");
+    public String getWikiPage(String UserInput){
+        static String encode(UserInput, "www.wikipedia.com");
 
     }
 
