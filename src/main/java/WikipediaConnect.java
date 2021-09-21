@@ -4,6 +4,11 @@ import java.net.URLConnection;
 
 public class WikipediaConnect {
 
+    public URLConnection openConnection(){
+
+
+    }
+
     public String getWikiPage(String n){
         String input = n;
         //String n is the user input
