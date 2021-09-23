@@ -8,6 +8,11 @@ public class WikipediaConnect {
         //https://en.wikipedia.org/wiki/Special:ApiSandbox
         // use sandbox to find recent updates?
 
+        URL url = new URL("https://en.wikipedia.org");
+        URLConnection connection = url.openConnection();
+        connection.setRequestProperty("User-Agent", "Revision Reporter/0.1 (me@bsu.edu)");
+        InputStream inputStream = connection.getInputStream();
+
 
     }
 
