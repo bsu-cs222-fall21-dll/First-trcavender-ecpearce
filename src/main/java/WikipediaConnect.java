@@ -7,7 +7,7 @@ import java.io.InputStream;
 public class WikipediaConnect {
     URL url = new URL("https://en.wikipedia.org");
     URLConnection connection = url.openConnection();
-        connection.setRequestProperty("User-Agent", "Revision Reporter/0.1 (me@bsu.edu)");
+    connection.setRequestProperty("User-Agent", "Revision Reporter/0.1 (me@bsu.edu)");
     InputStream inputStream = connection.getInputStream();
 
     public URLConnection openConnection() {
