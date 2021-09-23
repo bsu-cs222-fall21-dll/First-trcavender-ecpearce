@@ -11,7 +11,7 @@ public class WikipediaConnect {
              URLConnection connection = url.openConnection();
              connection.setRequestProperty("User-Agent", "Revision Reporter/0.1 (me@bsu.edu)");
              InputStream inputStream = connection.getInputStream();
-             return IOException;
+             return connection;
     }
 
 
@@ -22,5 +22,6 @@ public class WikipediaConnect {
 // get user input, and search wiki for input, if input is found 100%, return. If input is redirected, give
     // is ___ what you were looking for T or F. If T, return page, if F, either keep searching or give not found
     // if page is not found. return not found
+
 
 }
