@@ -10,6 +10,7 @@ public class WikipediaConnect {
         URLConnection connection = url.openConnection();
         connection.setRequestProperty("User-Agent", "Revision Reporter/0.1 (me@bsu.edu)");
         InputStream inputStream = connection.getInputStream();
+        return IOException;
     }
 
 
@@ -17,19 +18,6 @@ public class WikipediaConnect {
     public URLConnection openConnection() {
         return null;
     }
-
-    public String getWikiPage(String UserInput){
-        static String encode(UserInput, "www.wikipedia.com");
-
-    }
-
-
-
-
-
-
-
-
 
 
 
