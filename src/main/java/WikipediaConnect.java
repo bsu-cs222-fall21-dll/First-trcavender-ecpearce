@@ -12,7 +12,7 @@ public class WikipediaConnect {
              connection.setRequestProperty("User-Agent", "Revision Reporter/0.1 (me@bsu.edu)");
              InputStream inputStream = connection.getInputStream();
              return connection;
-    }
+        }
 
 
     public URLConnection openConnection() {
