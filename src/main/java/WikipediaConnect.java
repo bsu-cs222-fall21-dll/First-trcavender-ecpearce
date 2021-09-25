@@ -7,9 +7,10 @@ import java.io.InputStream;
 
 public class WikipediaConnect {
         private static URLConnection makeConnection(String Url) throws IOException{
-             URL url = new URL("https://en.wikipedia.org");
+            ReceiveUserInput receiveUserInput = new ReceiveUserInput();
+             URL url = new URL(receiveUserInput.completeUrl(ReceiveUserInput.userSearchWikipedia()));
              URLConnection connection = url.openConnection();
-             connection.setRequestProperty("User-Agent", "Revision Reporter/0.1 (me@bsu.edu)");
+             connection.setRequestProperty("User-Agent", "Revision Reporter/0.1 (ecpearce@bsu.edu)");
              InputStream inputStream = connection.getInputStream();
              connection.connect();
              return connection;
