@@ -2,8 +2,12 @@ import javax.swing.JOptionPane;
 
 public class ReceiveUserInput {
 
-    public static String userSearchWikipedia() {
+    public String userSearchWikipedia() {
         String userInput = JOptionPane.showInputDialog("What would you like to search?");
+        if (userInput.equals("")) {
+            System.err.println("No Input Detected");
+            System.exit(1);
+        }
         return userInput;
     }
 
