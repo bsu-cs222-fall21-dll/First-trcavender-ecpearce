@@ -1,8 +1,9 @@
 import java.io.InputStream;
 
 public class RevisionParser {
-    public String parse(InputStream){
-        String input = " ";
+    public  int getInput(){
+        int input = 0;
+
 
         return input;
 
