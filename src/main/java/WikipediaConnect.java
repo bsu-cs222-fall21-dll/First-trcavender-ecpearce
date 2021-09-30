@@ -1,5 +1,4 @@
 import java.io.IOException;
-import java.lang.Object;
 import java.net.ConnectException;
 import java.net.URL;
 import java.net.URLConnection;
@@ -12,15 +11,13 @@ public class WikipediaConnect {
                 URL url = new URL(Url);
                 URLConnection connection = url.openConnection();
                 connection.setRequestProperty("User-Agent", "FirstProject/0.1 (ecpearce@bsu.edu)");
-                InputStream inputStream = connection.getInputStream();
-                connection.connect();
-                return inputStream;
+                return connection.getInputStream();
             }
             catch(ConnectException connectException){
                 System.err.println("Unable to establish connection");
                 System.exit(3);
-                return null;
             }
+            return null;
         }
 
 
