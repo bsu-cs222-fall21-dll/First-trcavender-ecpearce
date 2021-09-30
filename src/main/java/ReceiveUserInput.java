@@ -21,4 +21,8 @@ public class ReceiveUserInput {
 
         //The idea of this method came from the work of wjgibson and wtwithers.
     }
+
+    public String giveUserInput (){
+        return completeUrl(userSearchWikipedia());
+    }
 }

@@ -7,6 +7,6 @@ public class UserInterface {
         ReceiveUserInput receiveUserInput = new ReceiveUserInput();
         WikipediaConnect wikipediaConnect = new WikipediaConnect();
 
-        wikipediaConnect.URLConnection(receiveUserInput.completeUrl(receiveUserInput.userSearchWikipedia()));
+        wikipediaConnect.URLConnection(receiveUserInput.giveUserInput());
     }
 }
